@@ -710,8 +710,9 @@ async function loadData() {
     hookControls();
 
     const start = makeUTCDate(2026, 0, 1);
+    const todayUTC = todayInTimeZone();
     viewStart = start;
-    focusDate = todayInTimeZone();
+    focusDate = todayUTC < MIN_DATE ? MIN_DATE : todayUTC;
     pendingScrollToISO = dateToISO(focusDate);
     syncMonthSelect(focusDate);
     renderCalendar();
