@@ -264,7 +264,7 @@ body {
 .day-cell {
   padding: 4px 0;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
   border-right: 1px solid var(--grid);
   line-height: 1.2;
@@ -551,7 +551,7 @@ body {
   position: absolute;
   top: 6px;
   right: 8px;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
 }
 
@@ -619,11 +619,16 @@ body {
   }
 
   .calendar-left {
-    flex: 0 0 110px;
+    flex: 0 0 96px;
   }
 
   .calendar-left-row {
     font-size: 12px;
+  }
+
+  .calendar-left-header {
+    text-align: center;
+    justify-content: center;
   }
 }
 
@@ -650,11 +655,19 @@ body {
   }
 
   .calendar-left {
-    flex: 0 0 96px;
+    flex: 0 0 84px;
   }
 
   .calendar-left-row,
   .calendar-left-header {
-    padding: 8px 6px;
+    padding: 8px 4px;
+  }
+
+  .day-cell {
+    font-size: 12px;
+  }
+
+  .day-number {
+    font-size: 12px;
   }
 }

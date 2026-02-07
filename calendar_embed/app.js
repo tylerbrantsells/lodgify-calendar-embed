@@ -112,7 +112,9 @@ function formatMonthLabelShort(dateObj) {
 }
 
 function formatMonthLabelTiny(dateObj) {
-  return `${monthFormatterTiny.format(dateObj)}.`;
+  const label = monthFormatterTiny.format(dateObj);
+  if (label === 'May') return 'May';
+  return `${label}.`;
 }
 
 function isMobileView() {
