@@ -709,7 +709,7 @@ async function loadData() {
 
     const start = makeUTCDate(2026, 0, 1);
     viewStart = start;
-    focusDate = addDays(start, 7);
+    focusDate = todayInTimeZone();
     syncMonthSelect(focusDate);
     renderCalendar();
   } catch (err) {
