@@ -357,8 +357,10 @@ def _collect_events():
                 continue
             if dtstart < min_date:
                 dtstart = min_date
-            summary = (event.get("summary") or "").strip()
-            event_type = "closed" if summary.lower() == "closed period" else "reservation"
+            raw_summary = (event.get("summary") or "").strip()
+            event_type = "closed" if raw_summary.lower() == "closed period" else "reservation"
+            # Remove guest-identifying details from public output.
+            summary = "Owner Block" if event_type == "closed" else "Reservation"
             normalized_events.append(
                 {
                     "uid": event.get("uid"),
