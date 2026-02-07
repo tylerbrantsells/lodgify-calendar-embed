@@ -303,6 +303,17 @@ body {
   height: var(--row-height);
 }
 
+.property-grid::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: rgba(47, 42, 38, 0.12);
+  pointer-events: none;
+}
+
 .availability-layer {
   position: absolute;
   inset: 0;

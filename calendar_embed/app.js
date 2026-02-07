@@ -26,6 +26,11 @@ const monthFormatterShort = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
 });
 
+const monthFormatterTiny = new Intl.DateTimeFormat('en-US', {
+  timeZone: 'UTC',
+  month: 'short',
+});
+
 const weekdayFormatter = new Intl.DateTimeFormat('en-US', {
   timeZone: 'UTC',
   weekday: 'short',
@@ -106,6 +111,10 @@ function formatMonthLabelShort(dateObj) {
   return monthFormatterShort.format(dateObj);
 }
 
+function formatMonthLabelTiny(dateObj) {
+  return monthFormatterTiny.format(dateObj);
+}
+
 function isMobileView() {
   return window.innerWidth <= 720;
 }
@@ -119,7 +128,8 @@ function abbreviatePropertyName(name) {
   if (!/^\d/.test(number)) {
     return name.length > 8 ? `${name.slice(0, 8)}` : name;
   }
-  const abbr = word ? word.slice(0, 3).toLowerCase() : '';
+  const slice = word ? word.slice(0, 4) : '';
+  const abbr = slice ? `${slice[0].toUpperCase()}${slice.slice(1).toLowerCase()}` : '';
   return `${number} ${abbr}`.trim();
 }
 
@@ -307,7 +317,7 @@ function renderCalendar() {
   const leftHeader = document.createElement('div');
   leftHeader.className = 'calendar-left-header';
   leftHeader.textContent = isMobileView()
-    ? formatMonthLabelShort(labelDate)
+    ? formatMonthLabelTiny(labelDate)
     : formatMonthLabel(labelDate);
   leftCol.appendChild(leftHeader);
 
@@ -408,6 +418,26 @@ function renderCalendar() {
   shell.appendChild(leftCol);
   shell.appendChild(scroll);
   calendarEl.appendChild(shell);
+
+  let scrollFrame = null;
+  const updateHeaderFromScroll = () => {
+    const cellWidth = parseFloat(getComputedStyle(calendarEl).getPropertyValue('--cell-width')) || 26;
+    const dayWidth = cellWidth * 2;
+    const dayIndex = Math.floor(scroll.scrollLeft / dayWidth);
+    const dateAtLeft = addDays(rangeStart, Math.max(0, dayIndex));
+    leftHeader.textContent = isMobileView()
+      ? formatMonthLabelTiny(dateAtLeft)
+      : formatMonthLabel(dateAtLeft);
+    syncMonthSelect(dateAtLeft);
+  };
+
+  scroll.addEventListener('scroll', () => {
+    if (scrollFrame) return;
+    scrollFrame = requestAnimationFrame(() => {
+      updateHeaderFromScroll();
+      scrollFrame = null;
+    });
+  });
 
   if (pendingScrollToISO) {
     const target = pendingScrollToISO;
