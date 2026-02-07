@@ -233,6 +233,8 @@ body {
   position: relative;
   flex: 1 1 auto;
   min-width: 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
 }
 
 .calendar-header {
@@ -554,5 +556,70 @@ body {
   .calendar-left-row,
   .calendar-left-header {
     padding: 10px 12px;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    --row-height: 56px;
+    --header-height: 46px;
+    --pill-height: 22px;
+    --cell-width: 22px;
+  }
+
+  .app {
+    padding: 12px;
+  }
+
+  .toolbar {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .controls {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .controls button,
+  .controls select {
+    flex: 1 1 auto;
+    min-width: 120px;
+  }
+
+  .calendar-left {
+    flex: 0 0 140px;
+  }
+
+  .calendar-left-row {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --row-height: 50px;
+    --header-height: 42px;
+    --pill-height: 20px;
+    --cell-width: 20px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .controls button,
+  .controls select {
+    width: 100%;
+  }
+
+  .calendar-left {
+    flex: 0 0 120px;
+  }
+
+  .calendar-left-row,
+  .calendar-left-header {
+    padding: 8px 10px;
   }
 }

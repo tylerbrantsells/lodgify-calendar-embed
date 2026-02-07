@@ -186,7 +186,9 @@ function computeEventSpan(event, rangeStart, rangeEndExclusive, reservationCheck
 
 function applyDensity(mode) {
   if (!densityToggle) return;
-  const stored = mode || localStorage.getItem('calendarDensity') || 'comfortable';
+  const stored = mode
+    || localStorage.getItem('calendarDensity')
+    || (window.innerWidth <= 720 ? 'compact' : 'comfortable');
   const nextMode = stored === 'compact' ? 'compact' : 'comfortable';
   localStorage.setItem('calendarDensity', nextMode);
   if (nextMode === 'compact') {
