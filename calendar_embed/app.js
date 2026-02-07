@@ -20,6 +20,12 @@ const monthFormatter = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
 });
 
+const monthFormatterShort = new Intl.DateTimeFormat('en-US', {
+  timeZone: 'UTC',
+  month: 'short',
+  year: 'numeric',
+});
+
 const weekdayFormatter = new Intl.DateTimeFormat('en-US', {
   timeZone: 'UTC',
   weekday: 'short',
@@ -94,6 +100,27 @@ function halfIndex(dateObj, rangeStart, half) {
 
 function formatMonthLabel(dateObj) {
   return monthFormatter.format(dateObj);
+}
+
+function formatMonthLabelShort(dateObj) {
+  return monthFormatterShort.format(dateObj);
+}
+
+function isMobileView() {
+  return window.innerWidth <= 720;
+}
+
+function abbreviatePropertyName(name) {
+  if (!name) return '';
+  const parts = name.trim().split(/\s+/);
+  if (parts.length === 0) return name;
+  const number = parts[0];
+  const word = parts[1] || '';
+  if (!/^\d/.test(number)) {
+    return name.length > 8 ? `${name.slice(0, 8)}` : name;
+  }
+  const abbr = word ? word.slice(0, 3).toLowerCase() : '';
+  return `${number} ${abbr}`.trim();
 }
 
 function formatRangeLabel(start, endExclusive) {
@@ -279,7 +306,9 @@ function renderCalendar() {
   leftCol.className = 'calendar-left';
   const leftHeader = document.createElement('div');
   leftHeader.className = 'calendar-left-header';
-  leftHeader.textContent = formatMonthLabel(labelDate);
+  leftHeader.textContent = isMobileView()
+    ? formatMonthLabelShort(labelDate)
+    : formatMonthLabel(labelDate);
   leftCol.appendChild(leftHeader);
 
   const leftBody = document.createElement('div');
@@ -288,7 +317,9 @@ function renderCalendar() {
   properties.forEach((property) => {
     const leftRow = document.createElement('div');
     leftRow.className = 'calendar-left-row';
-    leftRow.textContent = property.name;
+    leftRow.textContent = isMobileView()
+      ? abbreviatePropertyName(property.name)
+      : property.name;
     leftBody.appendChild(leftRow);
 
     const row = document.createElement('div');

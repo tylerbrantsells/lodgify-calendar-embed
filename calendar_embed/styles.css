@@ -581,6 +581,10 @@ body {
     gap: 8px;
   }
 
+  .controls .icon-button {
+    display: none;
+  }
+
   .controls button,
   .controls select {
     flex: 1 1 auto;
