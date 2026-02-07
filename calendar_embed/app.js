@@ -712,6 +712,7 @@ async function loadData() {
     const start = makeUTCDate(2026, 0, 1);
     viewStart = start;
     focusDate = todayInTimeZone();
+    pendingScrollToISO = dateToISO(focusDate);
     syncMonthSelect(focusDate);
     renderCalendar();
   } catch (err) {
