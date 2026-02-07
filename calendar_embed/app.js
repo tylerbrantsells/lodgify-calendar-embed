@@ -112,7 +112,7 @@ function formatMonthLabelShort(dateObj) {
 }
 
 function formatMonthLabelTiny(dateObj) {
-  return monthFormatterTiny.format(dateObj);
+  return `${monthFormatterTiny.format(dateObj)}.`;
 }
 
 function isMobileView() {

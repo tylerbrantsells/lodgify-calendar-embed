@@ -25,6 +25,12 @@
 - Header Height: 52px
 - Half‑day cell width: 26px (24px compact)
 - Pill Height: 26px (22px compact)
+- Row Divider: `rgba(47, 42, 38, 0.12)` (2px)
+
+### Mobile
+- Left column width: 110px (≤720px), 96px (≤540px)
+- Month header: short form (`Jan.`/`Feb.`) with no year
+- Property labels: number + first 4 letters, capitalized (e.g., `111 Eagl`)
 
 ## Components
 - Reservation pill: soft coral fill, coral border, white text, pill radius 14px.
