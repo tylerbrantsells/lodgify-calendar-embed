@@ -1,0 +1,7 @@
+.env
+.env.*
+notion_sync_state.json
+.DS_Store
+__pycache__/
+*.ics
+calendar_embed_pinned_*/

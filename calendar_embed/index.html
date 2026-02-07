@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Design Spark Properties</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="toolbar">
+      <div class="brand">
+        <img src="Design Spark Studio Splash-150px.png" alt="Design Spark Properties logo" />
+        <div class="title">
+          Design Spark Properties
+          <span class="meta" id="updatedAt"></span>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="today">Today</button>
+        <button id="prev" class="icon-button" aria-label="Previous">◀</button>
+        <button id="next" class="icon-button" aria-label="Next">▶</button>
+        <select id="monthSelect"></select>
+        <select id="propertyFilter"></select>
+      </div>
+    </header>
+
+    <div class="calendar" id="calendar"></div>
+
+    <div class="legend-bar">
+      <div class="legend" id="legend">
+        <div class="legend-item"><span class="legend-swatch reservation"></span>Reservation</div>
+        <div class="legend-item"><span class="legend-swatch closed"></span>Owner Block</div>
+        <div class="legend-item"><span class="legend-swatch quick"></span>Quick Turn</div>
+      </div>
+      <button id="densityToggle" class="gear-button" aria-label="Toggle density" title="Comfortable">
+        ⚙︎
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const cacheBust = `v=${Date.now()}`;
+    const dataScript = document.createElement('script');
+    dataScript.src = `calendar_data.js?${cacheBust}`;
+    dataScript.onload = () => {
+      const appScript = document.createElement('script');
+      appScript.src = `app.js?${cacheBust}`;
+      document.body.appendChild(appScript);
+    };
+    document.body.appendChild(dataScript);
+    setTimeout(() => window.location.reload(), 60 * 60 * 1000);
+  </script>
+</body>
+</html>
