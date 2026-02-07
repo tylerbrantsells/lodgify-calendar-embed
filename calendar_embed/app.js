@@ -7,6 +7,7 @@ const densityToggle = document.getElementById('densityToggle');
 const VIEW_DAYS = 365;
 const MIN_DATE = makeUTCDate(2026, 0, 1);
 const VIEW_SHIFT_DAYS = 30;
+const TIMEZONE = 'America/New_York';
 
 let calendarData = null;
 let viewStart = new Date();
@@ -24,10 +25,31 @@ const weekdayFormatter = new Intl.DateTimeFormat('en-US', {
   weekday: 'short',
 });
 
+const tzDateFormatter = new Intl.DateTimeFormat('en-US', {
+  timeZone: TIMEZONE,
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+});
+
 const weekdayHeaders = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
 function makeUTCDate(year, month, day) {
   return new Date(Date.UTC(year, month, day));
+}
+
+function todayInTimeZone() {
+  const parts = tzDateFormatter.formatToParts(new Date());
+  const values = {};
+  parts.forEach((part) => {
+    if (part.type !== 'literal') {
+      values[part.type] = part.value;
+    }
+  });
+  const year = Number(values.year);
+  const month = Number(values.month);
+  const day = Number(values.day);
+  return makeUTCDate(year, month - 1, day);
 }
 
 function addDays(dateObj, days) {
@@ -225,8 +247,7 @@ function renderCalendar() {
   const header = document.createElement('div');
   header.className = 'calendar-header';
 
-  const today = new Date();
-  const todayUTC = makeUTCDate(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
+  const todayUTC = todayInTimeZone();
 
   for (let i = 0; i < days; i += 1) {
     const dayCell = document.createElement('div');
@@ -384,8 +405,7 @@ function hookControls() {
   document.getElementById('prev').addEventListener('click', () => shiftView(-VIEW_SHIFT_DAYS));
   document.getElementById('next').addEventListener('click', () => shiftView(VIEW_SHIFT_DAYS));
   document.getElementById('today').addEventListener('click', () => {
-    const today = new Date();
-    const todayUTC = makeUTCDate(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
+    const todayUTC = todayInTimeZone();
     if (propertyFilter.value === 'all') {
       setFocusDate(todayUTC);
     } else {
@@ -509,8 +529,7 @@ function renderSingleProperty(property) {
     }
   });
 
-  const today = new Date();
-  const todayUTC = makeUTCDate(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
+  const todayUTC = todayInTimeZone();
 
   for (let w = 0; w < weeks; w += 1) {
     const weekStart = addDays(gridStart, w * 7);
@@ -609,7 +628,8 @@ async function loadData() {
 
     if (updatedAtEl && calendarData.generated_at) {
       const stamp = new Date(calendarData.generated_at);
-      const formatted = stamp.toLocaleString(undefined, {
+      const formatted = stamp.toLocaleString('en-US', {
+        timeZone: TIMEZONE,
         year: 'numeric',
         month: 'numeric',
         day: 'numeric',
