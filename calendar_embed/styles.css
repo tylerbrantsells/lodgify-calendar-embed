@@ -87,6 +87,17 @@ body {
   align-items: center;
 }
 
+.select-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.select-row select {
+  flex: 1 1 0;
+}
+
 .controls button,
 .controls select {
   border: 1px solid var(--grid);
@@ -603,6 +614,10 @@ body {
     min-width: 120px;
   }
 
+  .select-row {
+    width: 100%;
+  }
+
   .calendar-left {
     flex: 0 0 110px;
   }
@@ -630,12 +645,16 @@ body {
     width: 100%;
   }
 
+  .select-row {
+    flex-direction: row;
+  }
+
   .calendar-left {
     flex: 0 0 96px;
   }
 
   .calendar-left-row,
   .calendar-left-header {
-    padding: 8px 8px;
+    padding: 8px 6px;
   }
 }
