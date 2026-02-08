@@ -425,12 +425,13 @@ function renderCalendar() {
   const updateHeaderFromScroll = () => {
     const cellWidth = parseFloat(getComputedStyle(calendarEl).getPropertyValue('--cell-width')) || 26;
     const dayWidth = cellWidth * 2;
-    const dayIndex = Math.floor(scroll.scrollLeft / dayWidth);
-    const dateAtLeft = addDays(rangeStart, Math.max(0, dayIndex));
+    const centerIndex = Math.floor((scroll.scrollLeft + scroll.clientWidth / 2) / dayWidth);
+    const clamped = Math.max(0, Math.min(days - 1, centerIndex));
+    const dateAtCenter = addDays(rangeStart, clamped);
     leftHeader.textContent = isMobileView()
-      ? formatMonthLabelTiny(dateAtLeft)
-      : formatMonthLabel(dateAtLeft);
-    syncMonthSelect(dateAtLeft);
+      ? formatMonthLabelTiny(dateAtCenter)
+      : formatMonthLabel(dateAtCenter);
+    syncMonthSelect(dateAtCenter);
   };
 
   scroll.addEventListener('scroll', () => {
