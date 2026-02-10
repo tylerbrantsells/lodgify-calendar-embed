@@ -5,7 +5,7 @@ import os
 import re
 import ssl
 import smtplib
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from email.message import EmailMessage
 from urllib.request import Request, urlopen
 
@@ -238,8 +238,8 @@ def _filter_alerts(failures):
     if not failures:
         return []
     state = _load_alert_state(ALERT_DEDUPE_PATH)
-    now = datetime.datetime.now(datetime.timezone.utc)
-    window = datetime.timedelta(hours=ALERT_DEDUPE_WINDOW_HOURS)
+    now = datetime.now(timezone.utc)
+    window = timedelta(hours=ALERT_DEDUPE_WINDOW_HOURS)
     keep = []
     for failure in failures:
         key = failure.get('property') or failure.get('source') or 'unknown'
@@ -247,7 +247,7 @@ def _filter_alerts(failures):
         last = None
         if last_iso:
             try:
-                last = datetime.datetime.fromisoformat(last_iso)
+                last = datetime.fromisoformat(last_iso)
             except Exception:
                 last = None
         if not last or (now - last) > window:

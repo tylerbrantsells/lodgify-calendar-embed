@@ -11,9 +11,21 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      ICS_URLS_JSON: ${{ secrets.ICS_URLS_JSON }}
+      PROPERTY_ORDER_JSON: ${{ secrets.PROPERTY_ORDER_JSON }}
+      CALENDAR_MIN_DATE: ${{ secrets.CALENDAR_MIN_DATE }}
+      ICS_INSECURE_SSL: ${{ secrets.ICS_INSECURE_SSL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Verify secrets
+        run: |
+          if [ -z "$ICS_URLS_JSON" ]; then
+            echo "Missing ICS_URLS_JSON secret. Set it in repo settings to enable live sync."
+            exit 1
+          fi
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -21,11 +33,6 @@ jobs:
           python-version: '3.12'
 
       - name: Build calendar data
-        env:
-          ICS_URLS_JSON: ${{ secrets.ICS_URLS_JSON }}
-          PROPERTY_ORDER_JSON: ${{ secrets.PROPERTY_ORDER_JSON }}
-          CALENDAR_MIN_DATE: ${{ secrets.CALENDAR_MIN_DATE }}
-          ICS_INSECURE_SSL: ${{ secrets.ICS_INSECURE_SSL }}
         run: |
           python3 build_calendar_data.py
 

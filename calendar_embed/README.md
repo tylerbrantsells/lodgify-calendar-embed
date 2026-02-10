@@ -43,6 +43,11 @@ Used to keep **59 Oak Lane** closed until **2026‑09‑07**.
 ### Auto‑refresh
 The embedded view auto‑refreshes every hour.
 
+### HTTPS enforcement (GitHub Pages)
+The custom domain is served by GitHub Pages. For a server‑side HTTPS redirect:
+- Repo Settings → Pages → toggle **Enforce HTTPS**.
+- If the toggle is unavailable, wait for the certificate to finish provisioning, then enable it.
+
 ### View behavior
 The UI renders a rolling **180‑day** timeline with horizontal scroll.
 Prev/Next shifts the window by **30 days**.
