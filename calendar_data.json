@@ -1,22 +1,15 @@
 {
-  "generated_at": "2026-05-25T21:16:26+00:00",
+  "generated_at": "2026-05-25T23:12:27+00:00",
   "properties": [
     {
       "name": "59 Oak Lane",
       "events": [
         {
-          "uid": "279592ef-79cf-4b00-8442-f423eaa4837c",
+          "uid": "504153be-1de2-4a3d-8466-d5a3a27af462",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-01",
           "end": "2026-09-11"
-        },
-        {
-          "uid": "78ddfd55-1add-4ebf-bb5d-e36f75564272",
-          "summary": "Reservation",
-          "type": "reservation",
-          "start": "2026-09-18",
-          "end": "2026-09-20"
         }
       ]
     },
@@ -24,168 +17,168 @@
       "name": "111 Eagles",
       "events": [
         {
-          "uid": "d4c95a1b-00e6-4246-a3c9-01ee99d056db",
+          "uid": "954683ad-03b1-42ee-b72e-9a4c6fa2f60d",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-01",
           "end": "2026-01-03"
         },
         {
-          "uid": "0d7838e9-ff12-4b05-a4ea-471f964cf6b9",
+          "uid": "139ef679-c5c2-4c09-b1de-bd3a5d36b43b",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-03",
           "end": "2026-01-06"
         },
         {
-          "uid": "46d05dd1-6e32-47ea-b572-072e0a898438",
+          "uid": "23e7034e-0027-4742-b623-bc0c6ddaa06e",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-09",
           "end": "2026-01-11"
         },
         {
-          "uid": "fcaf21fd-f20f-47da-b674-464ad1863b10",
+          "uid": "a9d047d3-ee37-4dcd-af3e-0f1fc0daf455",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-16",
           "end": "2026-01-19"
         },
         {
-          "uid": "0f0f35a8-ffe4-4eb5-8387-1b7851426d09",
+          "uid": "256773f4-7db3-4809-96b7-36bb2508d26a",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-21",
           "end": "2026-01-22"
         },
         {
-          "uid": "a72a33e2-0435-45a1-bb4f-592e5861aa78",
+          "uid": "f2272a6c-b9aa-4f39-a5b8-1a32c570c916",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-22",
           "end": "2026-01-25"
         },
         {
-          "uid": "21d6750b-d0ea-4602-8c3e-8ac0f48cc817",
+          "uid": "78b711c3-1423-4303-aaeb-f1aec53a5f6a",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-25",
           "end": "2026-01-28"
         },
         {
-          "uid": "b1db172f-5a34-4eee-984d-3bd21b751071",
+          "uid": "040c49cc-7187-4088-815c-19a95dad06df",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-29",
           "end": "2026-01-30"
         },
         {
-          "uid": "ae466243-d447-4ea2-a506-09152f746a86",
+          "uid": "31a28479-96b2-4bf4-b2af-9ce4685da344",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-30",
           "end": "2026-02-01"
         },
         {
-          "uid": "98c2a19d-92d4-46a6-8920-c903820f15a1",
+          "uid": "8e047267-7289-4c2f-b862-87619e86707a",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-05",
           "end": "2026-02-08"
         },
         {
-          "uid": "d084a58c-d956-4792-b671-d0b339f484c1",
+          "uid": "b64856fb-3f2a-4d8c-b7d2-3401334b8616",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-08",
           "end": "2026-02-12"
         },
         {
-          "uid": "7a88c9b2-9a87-4b32-aa75-063d62558cdf",
+          "uid": "ce50c731-ee23-4263-83f0-fff81b96aa5e",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-13",
           "end": "2026-02-16"
         },
         {
-          "uid": "5f714b7a-0a94-4914-a6e8-0b2cd669f7e9",
+          "uid": "f77c5e58-7ecf-4623-be47-3267cdc71c89",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-19",
           "end": "2026-02-22"
         },
         {
-          "uid": "9a9961bd-7350-486a-9154-739348ec8fcd",
+          "uid": "afcc933b-7261-415a-88b5-d846c27f30c1",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-22",
           "end": "2026-02-24"
         },
         {
-          "uid": "8e0c1812-c033-4a89-9a13-5f78760a8096",
+          "uid": "777e8bbb-a67f-49c0-bc23-e1f7c138458b",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-25",
           "end": "2026-02-28"
         },
         {
-          "uid": "c386f5fd-7338-4063-b13a-47782c14298c",
+          "uid": "bf6b54b7-23e9-4a9f-a0b6-cc319f9eba27",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-28",
           "end": "2026-03-03"
         },
         {
-          "uid": "979191ec-14f9-4b00-ba92-da8891055895",
+          "uid": "c470f44b-5da9-4eb4-9be0-f5b8e8bb6ad6",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-06",
           "end": "2026-03-08"
         },
         {
-          "uid": "6874af6a-079a-4bd7-bd41-ff9962c0cbf7",
+          "uid": "00e04d2f-e33d-4adc-a561-c30be51b8da3",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-13",
           "end": "2026-03-15"
         },
         {
-          "uid": "5150d3b8-c244-4230-8ce5-6b8e9d616f8e",
+          "uid": "3b34b30b-0091-4d18-9e09-6128cbc8d78b",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-02",
           "end": "2026-04-06"
         },
         {
-          "uid": "fc832879-151c-4393-9f45-0c73f0024b1a",
+          "uid": "555bef02-853e-4726-a123-649c51372059",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-01",
           "end": "2026-05-05"
         },
         {
-          "uid": "a5a80007-6f59-4836-a2d2-c24afaed3593",
+          "uid": "bef12c2a-af7c-4d7a-885f-0b9badac3aee",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-15",
           "end": "2026-05-17"
         },
         {
-          "uid": "daac5356-4b66-4c14-b07c-d7a35a70fb19",
+          "uid": "adce04ec-2faa-4b46-8bec-f21eda0aee76",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-22",
           "end": "2026-05-25"
         },
         {
-          "uid": "52fb4a33-96c4-4a66-8e19-a864b7994d19",
+          "uid": "274e8f55-3909-42cd-8be6-33c610c24bea",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-07-03",
           "end": "2026-07-06"
         },
         {
-          "uid": "f78791ce-9608-4e49-8b3a-fb527457a4ea",
+          "uid": "2f19fdc6-3a3a-46f2-bfe8-8e80506532d6",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-07-08",
@@ -197,147 +190,147 @@
       "name": "119 Pedlars Point",
       "events": [
         {
-          "uid": "d64bde46-dca6-471f-bc22-391e599380f9",
+          "uid": "47671065-f2a2-437a-b132-eaae4245785d",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-01",
           "end": "2026-01-04"
         },
         {
-          "uid": "c239d4ad-fcb5-44a3-88ef-090720b76b70",
+          "uid": "0ed179bc-39f6-48ad-a7d6-ae5c112c6c76",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-16",
           "end": "2026-01-19"
         },
         {
-          "uid": "45a4d865-9dba-4f97-a0a0-cc29d4c46ba6",
+          "uid": "2f56563c-16ac-4c3c-aef3-99b0f4681566",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-21",
           "end": "2026-01-24"
         },
         {
-          "uid": "76a40759-7f51-4cbc-ade0-d2ffedd58c60",
+          "uid": "1f78b829-2d5e-4309-a78e-4e45a244e6dd",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-24",
           "end": "2026-01-27"
         },
         {
-          "uid": "a6e50900-f812-4933-8861-8a640288bf50",
+          "uid": "fa7db8e5-f609-4a80-9857-43aebac07260",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-27",
           "end": "2026-01-29"
         },
         {
-          "uid": "91e014d1-ff85-4c7a-95b2-b73aaf58a4f1",
+          "uid": "d87898bf-6214-488e-a477-22263e752374",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-29",
           "end": "2026-02-02"
         },
         {
-          "uid": "540acca7-2967-4c1d-8e17-711d4e5969c4",
+          "uid": "b50d31bb-4a75-442c-87cb-5b7353ecc497",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-06",
           "end": "2026-02-08"
         },
         {
-          "uid": "8b068e65-01bb-43b7-9f6c-a9d5fa7a7565",
+          "uid": "28ff33bd-8521-4e3b-ab08-936df7e0455e",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-14",
           "end": "2026-02-16"
         },
         {
-          "uid": "7c27a257-8923-48e0-ae6e-b256c4571482",
+          "uid": "72a86847-a61a-422e-a5dd-6b55c893a326",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-19",
           "end": "2026-02-22"
         },
         {
-          "uid": "e6402f1b-c36e-41b4-9dcf-b79d944eaeb3",
+          "uid": "a25942ce-b24f-461f-991c-9972157c77e1",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-02-22",
           "end": "2026-02-23"
         },
         {
-          "uid": "61602b74-6a44-4792-8843-01d377091fa1",
+          "uid": "ecf2ab0e-8554-429a-85fa-ba66145fea87",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-27",
           "end": "2026-03-01"
         },
         {
-          "uid": "b46edd1c-1a61-4d50-8866-b6f362151f7c",
+          "uid": "ea11029f-3f9a-4834-a565-662dafceee04",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-03-13",
           "end": "2026-03-31"
         },
         {
-          "uid": "e57274be-8291-4aa9-9108-8359bb5daeb8",
+          "uid": "0f920855-065d-4494-a957-2e7a24f6a7f2",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-02",
           "end": "2026-04-05"
         },
         {
-          "uid": "55519a38-8827-4bc0-8e8b-5f83e7c2ad8d",
+          "uid": "fa58e378-2830-4162-815f-5338a303d08c",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-04-05",
           "end": "2026-04-06"
         },
         {
-          "uid": "fded8a53-a2fc-4856-a486-7c65911d6470",
+          "uid": "34001aa4-845f-448c-9e3a-71778faeb4df",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-08",
           "end": "2026-04-12"
         },
         {
-          "uid": "1cdf9b70-faca-4256-a55a-99e4adc53d58",
+          "uid": "779c3660-7c6e-41cf-a295-01c409035ff3",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-04-12",
           "end": "2026-04-13"
         },
         {
-          "uid": "99f3542e-18ea-4172-b14b-c53abd43f13c",
+          "uid": "b62ced81-ad6f-4cc2-b130-7fe0e5df5ae5",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-22",
           "end": "2026-04-25"
         },
         {
-          "uid": "911c0796-901a-40de-90f3-64de1564bfca",
+          "uid": "8a8e6d11-6b34-490a-be51-6fe850368aac",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-15",
           "end": "2026-05-17"
         },
         {
-          "uid": "3a5aac0b-8264-4c52-bb2c-5fcc8fbdb382",
+          "uid": "f22c07cb-c94c-43c8-b9f6-af8bda77bec5",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-22",
           "end": "2026-05-25"
         },
         {
-          "uid": "df388300-b926-4612-a9ea-f62f93de241e",
+          "uid": "e2281acf-52f8-44b7-896b-24a545e1578f",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-07-10",
           "end": "2026-07-15"
         },
         {
-          "uid": "20461fa9-ca1a-43d0-bcfe-d9aebfcc4a97",
+          "uid": "af71cd32-3169-4cca-8358-37776a391ee8",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-09-11",
@@ -349,259 +342,259 @@
       "name": "1923 High Ridge",
       "events": [
         {
-          "uid": "fbf1e3b5-8a3a-434f-a826-27c0a4bdfe16",
+          "uid": "f76d4e9c-ab88-43ba-9469-65981d42fcfb",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-01",
           "end": "2026-01-04"
         },
         {
-          "uid": "87aba8ae-9476-44cd-9858-0e85efc39cba",
+          "uid": "91ec834b-1773-459a-93db-01fa5c599154",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-11",
           "end": "2026-01-13"
         },
         {
-          "uid": "c32930f0-597d-4daf-8b22-a92582c54678",
+          "uid": "37757f0d-e93f-44cf-9ad8-beffb4c4d80d",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-16",
           "end": "2026-01-19"
         },
         {
-          "uid": "6a87db89-ab3b-4132-8e5d-6fcd43770a0f",
+          "uid": "145fa350-6bc3-46ec-ba4b-5db148c99790",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-21",
           "end": "2026-01-23"
         },
         {
-          "uid": "c62a409c-4c65-4735-a256-97d1d17e2779",
+          "uid": "7b0e26cc-0757-4f42-b907-3023578f601a",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-23",
           "end": "2026-01-26"
         },
         {
-          "uid": "b9d4b58e-4c10-4327-9d41-d5a15e16ba52",
+          "uid": "ed77c1de-e24d-41cf-899c-614a744e2f6b",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-26",
           "end": "2026-01-30"
         },
         {
-          "uid": "901c824d-c100-409d-929e-3b4d5b8bd084",
+          "uid": "7597588f-3884-4627-a546-694e7ba7e2c5",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-30",
           "end": "2026-02-01"
         },
         {
-          "uid": "845e4f32-45af-4013-9585-ca4104ee8660",
+          "uid": "98e86213-54b4-4504-b1d9-5afc9b1e3798",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-02-01",
           "end": "2026-02-02"
         },
         {
-          "uid": "5d1d2279-9843-454f-b3bc-d4f2ddf70c45",
+          "uid": "d8bc7d0e-b198-4df7-b484-85e7fa905d57",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-06",
           "end": "2026-02-09"
         },
         {
-          "uid": "d0477cab-03d4-48f2-85d1-5030e421cd2b",
+          "uid": "ec9b959a-18cb-46a7-b7e5-561b244e5549",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-13",
           "end": "2026-02-15"
         },
         {
-          "uid": "7dec32f0-04e7-40e4-bf96-4ec050ebf381",
+          "uid": "969a34ba-2769-4b2c-9495-b51a1eec6496",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-15",
           "end": "2026-02-17"
         },
         {
-          "uid": "2d52953c-650a-4ee7-bad0-b3b3b30ee78f",
+          "uid": "2869a1c7-2eb8-4072-b90f-7c8d913347c1",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-20",
           "end": "2026-02-23"
         },
         {
-          "uid": "1ea14e41-ed5f-487f-be51-508977fec4ed",
+          "uid": "0f66e9d8-1db1-4d37-baa9-1718f240cef9",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-02-24",
           "end": "2026-02-27"
         },
         {
-          "uid": "c477abc4-9f02-4f61-a9a1-20e5ff44b28f",
+          "uid": "a1241016-bffc-4c53-95b8-28c564218033",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-27",
           "end": "2026-03-01"
         },
         {
-          "uid": "ff004aff-bb6b-429d-b6e7-6d16fe4088b4",
+          "uid": "be0700c4-7829-4825-a72c-38bed3d48f03",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-08",
           "end": "2026-03-10"
         },
         {
-          "uid": "c1f3a17e-bc16-43df-8337-39d4b3df6e65",
+          "uid": "97fbb96b-cca7-4a4f-81c7-a137ac830573",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-03-11",
           "end": "2026-03-13"
         },
         {
-          "uid": "80c81d90-9882-43e5-8a06-7c533d3d3451",
+          "uid": "e79d3f8b-1bbd-4103-b499-589a76c3ef52",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-13",
           "end": "2026-03-15"
         },
         {
-          "uid": "de3da7d6-1d49-4e3a-af86-5e4011ecef55",
+          "uid": "38bb8a65-1c5a-4712-aef6-df72d725d3b0",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-20",
           "end": "2026-03-22"
         },
         {
-          "uid": "525b0055-ed2f-4902-8156-3a92fb054057",
+          "uid": "189fc11a-03fa-4d96-b6f0-2168b1ee1aac",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-26",
           "end": "2026-03-29"
         },
         {
-          "uid": "de14d80f-1ab8-4e22-bd50-d0cd42035aff",
+          "uid": "e68a3eec-4e99-4935-b40b-9ccd257ee38a",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-02",
           "end": "2026-04-04"
         },
         {
-          "uid": "51188a0a-17df-46ed-89b3-77e4124db89f",
+          "uid": "1c4b8cb0-21a3-453d-aada-3aeaf5e7fe3c",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-04",
           "end": "2026-04-09"
         },
         {
-          "uid": "8fac4b96-8bd0-4775-b829-bfd28e2a2d2d",
+          "uid": "6f5313a1-9089-4db2-b22f-494695a40f19",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-10",
           "end": "2026-04-12"
         },
         {
-          "uid": "9625dc7f-12ed-440a-bb5c-c177d053fea0",
+          "uid": "2f4f5760-4577-4588-97dc-9e658459a66e",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-04-12",
           "end": "2026-04-13"
         },
         {
-          "uid": "ac53a074-44ed-4e6f-bdcf-8fc761179bcf",
+          "uid": "e2370e0f-ecdc-4409-a833-c04a70878c18",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-17",
           "end": "2026-04-19"
         },
         {
-          "uid": "25bc7161-26ee-463e-a055-15e7ab510590",
+          "uid": "83d8b74b-2774-49e5-8793-2ef9a93f8844",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-24",
           "end": "2026-04-26"
         },
         {
-          "uid": "db6581a3-90d9-4af1-aced-68c8503b07e9",
+          "uid": "cad983b9-57d1-43c2-9841-3f98e584be5a",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-29",
           "end": "2026-05-03"
         },
         {
-          "uid": "5652fcdc-d125-44bd-804e-30c5cdef7089",
+          "uid": "f546b4c8-1c8e-4f49-b751-321cd840b352",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-08",
           "end": "2026-05-10"
         },
         {
-          "uid": "99b0faca-2b87-434f-8809-d08b2f90699a",
+          "uid": "e51a24c6-66a2-4ec7-bf43-e5b17eb93462",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-14",
           "end": "2026-05-16"
         },
         {
-          "uid": "802ecc59-78cc-46f0-8a9e-0e070fd169d4",
+          "uid": "40fbea27-d0f7-46b9-829b-8334c3ae71e6",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-16",
           "end": "2026-05-18"
         },
         {
-          "uid": "c938530e-ff68-4d6c-8a54-745c4338b40f",
+          "uid": "40dd5844-64d7-4441-afda-b481f0f5f7e5",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-18",
           "end": "2026-05-21"
         },
         {
-          "uid": "fea916d7-3676-4ec0-8e8d-1c316c51811e",
+          "uid": "cff6e287-ac21-499c-a1fe-c6942d07ea0c",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-22",
           "end": "2026-05-25"
         },
         {
-          "uid": "d1808186-1b2a-4e52-bfaf-1ed9e4fb8359",
+          "uid": "35e62c8e-3672-43b8-80a5-ea5d5b64b113",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-06-03",
           "end": "2026-06-06"
         },
         {
-          "uid": "3470cefa-3453-442e-bc40-2841cdb51299",
+          "uid": "f450281f-38e6-417e-a58c-1400c8bfa4aa",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-06-08",
           "end": "2026-06-11"
         },
         {
-          "uid": "d5e19007-fa2c-46f9-b2f3-7979b683a2f4",
+          "uid": "7b530568-baf4-49ea-8964-fb69c38095b2",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-06-11",
           "end": "2026-06-14"
         },
         {
-          "uid": "8adea01d-b633-4069-99b2-3d1569ff046b",
+          "uid": "d5e22b0d-80d8-4ac9-a34a-c8ecfff18b80",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-06-19",
           "end": "2026-06-22"
         },
         {
-          "uid": "636cded1-058a-4840-ae5c-eb173736aba2",
+          "uid": "8cf4f2cd-3be5-4292-af8e-84630657e3ba",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-06-22",
           "end": "2026-06-25"
         },
         {
-          "uid": "6f11d9ea-17ae-479b-b737-4ba0ad71035e",
+          "uid": "90b184e2-17de-41a3-be76-23178349edaa",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-07-01",
@@ -613,182 +606,182 @@
       "name": "327 Crawfords Edge",
       "events": [
         {
-          "uid": "db9441e8-b2b7-4410-8d86-1296a61a484d",
+          "uid": "4b45a54b-3541-414e-a038-b8c14c03bcfb",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-01",
           "end": "2026-01-04"
         },
         {
-          "uid": "feec429a-ddd5-4dce-8ac8-27184ad84cc8",
+          "uid": "76b3dbca-bff9-463e-9a58-c3f32762f5c3",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-12",
           "end": "2026-01-19"
         },
         {
-          "uid": "4f39b6e1-c2fd-4364-963f-96e0e6bd1a01",
+          "uid": "54ecc568-1205-4d86-a8ce-3edf37795a3e",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-21",
           "end": "2026-01-24"
         },
         {
-          "uid": "8c0d2cae-ffb2-4ebd-8918-6755187117ac",
+          "uid": "7f9eb4c7-46ca-4bd2-825f-2982494f3837",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-24",
           "end": "2026-01-26"
         },
         {
-          "uid": "b1ee93fa-42f5-4c08-a7b8-e56a19023a07",
+          "uid": "d59b33fd-832f-4371-8f9e-f9ea6d37952a",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-26",
           "end": "2026-01-29"
         },
         {
-          "uid": "c59e7968-8a37-4622-89e2-ddde3d542d63",
+          "uid": "9050b7dd-d361-44da-93cf-d987a353a7eb",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-05",
           "end": "2026-02-08"
         },
         {
-          "uid": "454d9831-e709-4b30-87de-a74bcf82f79a",
+          "uid": "5f25b167-5497-4f6e-a286-f5aeb7639ca4",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-14",
           "end": "2026-02-16"
         },
         {
-          "uid": "77302f30-2ef0-4824-b807-0883a98303fa",
+          "uid": "d097222d-d539-437d-8c83-ecf01c0f80aa",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-02-19",
           "end": "2026-02-23"
         },
         {
-          "uid": "43295e3f-3592-4c67-834e-6a99b7cc7f7a",
+          "uid": "5fda4621-df40-4d52-8d94-72c58de66602",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-05",
           "end": "2026-03-08"
         },
         {
-          "uid": "0ed9b9dd-aa0f-4ae7-bc9b-28aeb1eb8796",
+          "uid": "870d1a39-6858-4332-95a6-dc873d6532ba",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-03-19",
           "end": "2026-03-23"
         },
         {
-          "uid": "39e37fa8-d059-4907-8e79-d098f2d75ba7",
+          "uid": "abd367a9-6e8f-4f4d-9b54-1af9936c0add",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-03-25",
           "end": "2026-03-26"
         },
         {
-          "uid": "4fdd3335-feb9-4ca8-8220-291b65ec1758",
+          "uid": "0dd43b7e-913f-4608-84db-8718ec32a99f",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-26",
           "end": "2026-03-29"
         },
         {
-          "uid": "dffc3858-af48-4186-a842-10c241834a76",
+          "uid": "90106694-bdf3-4f33-9a9c-c23ef977e04f",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-03-29",
           "end": "2026-04-03"
         },
         {
-          "uid": "f420657a-dae9-4823-bcd6-62dd4f2c705e",
+          "uid": "18b41899-8ff4-47d9-b8d5-34e8cdd1abe5",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-03",
           "end": "2026-04-05"
         },
         {
-          "uid": "07c20d58-4ed1-4f8d-9acf-451a75a8f8c8",
+          "uid": "30747c7f-17ae-4b36-87ae-83af5665eee8",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-04-05",
           "end": "2026-04-24"
         },
         {
-          "uid": "6d92b5eb-2004-43d1-a848-3f66c3ca052c",
+          "uid": "db496b67-6e41-48de-9184-45e188c8f271",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-24",
           "end": "2026-04-26"
         },
         {
-          "uid": "805ccc9e-87e7-456b-b47b-425a60cde078",
+          "uid": "bfede6d3-83bb-4046-883b-e80d4c8aa5fe",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-26",
           "end": "2026-05-03"
         },
         {
-          "uid": "c1956051-c4a7-47a0-8280-5ba547887d68",
+          "uid": "32bbd174-f70c-414b-80e3-d4529c470e3f",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-05-03",
           "end": "2026-05-07"
         },
         {
-          "uid": "618cdf7f-b2db-4eb2-ac37-c4c78b2c1085",
+          "uid": "ac4cc38e-ebf3-4a1e-850c-56ecafb50914",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-07",
           "end": "2026-05-10"
         },
         {
-          "uid": "a50438aa-601c-42d6-a818-0419e5439c79",
+          "uid": "18870232-7800-4b10-8932-57e8ea98d0ca",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-05-10",
           "end": "2026-05-21"
         },
         {
-          "uid": "134a87c6-3edf-42d7-b33e-4b05c3f4c0c4",
+          "uid": "18f67d1a-c432-4e96-9344-9c0a9ea7be08",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-21",
           "end": "2026-05-26"
         },
         {
-          "uid": "22975c84-b630-47fd-96fc-14287a230ba6",
+          "uid": "3138d855-3abd-4103-a308-3897838f3746",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-05-26",
           "end": "2026-05-28"
         },
         {
-          "uid": "a3658113-6069-4b18-b82b-6eb8f166b207",
+          "uid": "b3e46031-b50b-452c-8d7c-dce50119d0fc",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-28",
           "end": "2026-06-01"
         },
         {
-          "uid": "af1d7bfd-9945-4a23-a712-473f7ced48b9",
+          "uid": "6d9ae991-f8a7-45fe-9920-2aa020537d90",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-06-02",
           "end": "2026-06-12"
         },
         {
-          "uid": "0db87197-e852-4700-84a8-990198b4e6e0",
+          "uid": "104964e1-68bf-4369-9689-bb58f0fa1f19",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-06-12",
           "end": "2026-06-15"
         },
         {
-          "uid": "2fe13063-ed16-4902-9c1a-d44b39dc6dd3",
+          "uid": "b4a9504b-c5e1-41be-bea8-38ca6712e306",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-06-15",
@@ -800,259 +793,259 @@
       "name": "333 Dobie",
       "events": [
         {
-          "uid": "f171d8e7-b6f8-4c80-8d6b-0446e991de03",
+          "uid": "cc67cd5f-50a2-401d-a0e3-873ee886eae3",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-01",
           "end": "2026-01-02"
         },
         {
-          "uid": "141e3ea1-092f-421a-9dd6-1c3507eb2c06",
+          "uid": "40923231-01ea-4d95-95fd-8b060c95005c",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-02",
           "end": "2026-01-04"
         },
         {
-          "uid": "c63db0e2-e9e6-4638-9d2f-6c437be1f5e4",
+          "uid": "fcd0866c-3574-409c-9e1a-efff6bb06df9",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-05",
           "end": "2026-01-08"
         },
         {
-          "uid": "3b0dede4-b80d-4951-9a75-8c99919b889e",
+          "uid": "ff860723-0943-490f-86b0-f1d22b135b7f",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-08",
           "end": "2026-01-09"
         },
         {
-          "uid": "e5237711-f71d-4be9-b9ce-31453a24e4a6",
+          "uid": "b2bcb73b-12ec-486b-b8ca-ab976e8273dc",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-09",
           "end": "2026-01-11"
         },
         {
-          "uid": "da8d1862-ce5c-4c5d-bdfe-abcaf9694b30",
+          "uid": "b21d84f1-8ff9-4efb-9b0f-d09da9dede91",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-16",
           "end": "2026-01-19"
         },
         {
-          "uid": "263eee1c-1d8e-4e81-8d76-7650440f6963",
+          "uid": "95b440d4-0528-4e53-a6e4-9bfe7961048f",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-19",
           "end": "2026-01-21"
         },
         {
-          "uid": "238e1f43-5357-4592-a751-98e1b42de79e",
+          "uid": "4ab87576-7540-4510-b974-327c9ca0435e",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-21",
           "end": "2026-01-24"
         },
         {
-          "uid": "bbdedb2b-af1d-445c-aa5d-51b9219a79b9",
+          "uid": "c37b5f9a-65f5-4880-9ecd-b92652cd3039",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-24",
           "end": "2026-01-29"
         },
         {
-          "uid": "56cffafb-6b12-46fd-afc6-f1f91ea253f7",
+          "uid": "b89511ea-d9df-41b9-ba44-0c6526dc13d0",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-29",
           "end": "2026-01-30"
         },
         {
-          "uid": "ff270c25-3d07-4b57-82c8-81465404e1c8",
+          "uid": "9ce10a83-1e9b-41c2-89fb-cff1b2eac132",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-30",
           "end": "2026-02-01"
         },
         {
-          "uid": "5c7dabde-0f04-48b6-bbd8-ffc9814f5d30",
+          "uid": "67579f89-36c3-45d9-9d88-8b30276ca01d",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-03",
           "end": "2026-02-06"
         },
         {
-          "uid": "9b2a8ecb-5aab-412e-8579-4202789c2472",
+          "uid": "56cdff28-2fa5-4ef1-ab0b-523ed497af66",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-06",
           "end": "2026-02-08"
         },
         {
-          "uid": "aaf2eb18-16d9-444f-8233-73c33a17578e",
+          "uid": "eeef8a18-82c9-4ab4-b77f-8229c6b609b2",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-09",
           "end": "2026-02-13"
         },
         {
-          "uid": "9f65c729-bf55-4c23-9048-cbc7e47e9327",
+          "uid": "924fa48c-38ea-49fd-af40-658ebdb3f1f1",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-13",
           "end": "2026-02-16"
         },
         {
-          "uid": "ac2bf120-c3c1-4181-a28f-b4fa2ee68d61",
+          "uid": "7274d22c-9e42-4c86-8cb8-89b17055556a",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-16",
           "end": "2026-02-18"
         },
         {
-          "uid": "05dddabb-5a23-4ce7-9196-97bd0d0d3b70",
+          "uid": "15e5edd0-ea5c-41c4-b824-02102e38d3f7",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-19",
           "end": "2026-02-23"
         },
         {
-          "uid": "c3b6ba4c-6d71-4616-b5b0-cf95f5888a50",
+          "uid": "dbf3430a-1f17-47b2-9475-924fe1c00950",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-26",
           "end": "2026-03-01"
         },
         {
-          "uid": "4f86e1c2-7d81-41d5-a96e-f338a5383b18",
+          "uid": "d9021c40-c768-44d0-9bb9-eae3a883370a",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-05",
           "end": "2026-03-08"
         },
         {
-          "uid": "327809ba-cb63-474b-b440-b9dcc89b2268",
+          "uid": "d2af77a7-24f7-45d4-914f-82010b2ba302",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-27",
           "end": "2026-03-29"
         },
         {
-          "uid": "502a6f81-a4d8-44ac-ab16-1d94eec1cde0",
+          "uid": "31290375-5ba5-4094-9633-a4c0c4ae0f42",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-04-02",
           "end": "2026-04-03"
         },
         {
-          "uid": "39233508-38fe-466d-80f8-1bda8092b966",
+          "uid": "57986a0f-c264-4db1-ac2b-8e92cfc604b3",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-03",
           "end": "2026-04-05"
         },
         {
-          "uid": "46ab6b32-ba55-4377-ba92-1347db47d648",
+          "uid": "500d7f4c-64ff-40ef-9773-433a171b997c",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-04-05",
           "end": "2026-04-06"
         },
         {
-          "uid": "a24f1717-0193-42b8-acff-576961684880",
+          "uid": "1eff5986-d350-48de-b5b5-382b2ac5d4c8",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-06",
           "end": "2026-04-09"
         },
         {
-          "uid": "0c559f99-0c9b-4016-9f2d-e264c95bf60a",
+          "uid": "9abeb79b-cce1-41f4-9d19-4c2c317c92b1",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-04-10",
           "end": "2026-04-15"
         },
         {
-          "uid": "c9038c90-cd13-4088-ad7e-f3de15006f44",
+          "uid": "fd3e8300-1e12-4a78-8c26-89a602da9421",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-23",
           "end": "2026-04-26"
         },
         {
-          "uid": "a15c3d54-461b-44cf-a8ae-c9792f05e6d3",
+          "uid": "13bf4421-add0-4aa1-92f3-fd466fb93413",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-14",
           "end": "2026-05-17"
         },
         {
-          "uid": "d87f0915-5bdd-489f-b3c8-129d3e8304da",
+          "uid": "7883ff1e-28b4-4a24-aa5a-2bd7b254cbc7",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-22",
           "end": "2026-05-25"
         },
         {
-          "uid": "d4dcb047-ace2-4117-8a8d-82a09dabaf3b",
+          "uid": "d0868046-a4cc-4503-ac29-f11666b4d900",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-07-02",
           "end": "2026-07-05"
         },
         {
-          "uid": "94b49556-09ed-4928-801f-c51242ca2ffd",
+          "uid": "bf9f8442-2f28-499f-ab99-113d82d264af",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-07-20",
           "end": "2026-07-27"
         },
         {
-          "uid": "e4a73147-6587-4587-a9cd-b5b727f2a8eb",
+          "uid": "2f9d85e2-f006-4bd0-abbe-c115dc455fac",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-08-13",
           "end": "2026-08-16"
         },
         {
-          "uid": "a0a53b1c-12e5-4554-a03e-5344abfe173f",
+          "uid": "c976ccc1-c467-47b3-9ae3-dab811031e0f",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-12-28",
           "end": "2027-01-02"
         },
         {
-          "uid": "e46939ab-91d5-4302-8fa2-e91c9cdbe29b",
+          "uid": "17405596-71db-4a65-b4bc-ae5c80f827a8",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2027-01-22",
           "end": "2027-01-26"
         },
         {
-          "uid": "41321a50-3d6c-48f3-be73-5561df7d4598",
+          "uid": "549b99a8-42db-4f65-9cda-edf66e6f9b81",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2027-01-29",
           "end": "2027-01-31"
         },
         {
-          "uid": "dd568083-c273-447d-b4a1-a0cdd8abec52",
+          "uid": "23c05461-1f49-4b69-b8f6-b8a5e8fd5506",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2027-02-03",
           "end": "2027-02-05"
         },
         {
-          "uid": "8b06b532-395f-4d11-8ca1-ecf724acfb6a",
+          "uid": "8e64c1c0-17a7-450b-a5a8-5f41f1068f0b",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2027-02-05",
           "end": "2027-02-07"
         },
         {
-          "uid": "34edd91b-874f-49bf-890e-6e1712675b90",
+          "uid": "5924b6a6-e5fe-48df-9288-4a8ff5a8f5d3",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2027-02-14",
@@ -1064,133 +1057,133 @@
       "name": "61 Bear Run",
       "events": [
         {
-          "uid": "2ade1bc7-1e4d-4e60-b199-205a75a37c63",
+          "uid": "e2532cf9-babd-42d2-aa69-7b456858e766",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-01",
           "end": "2026-01-03"
         },
         {
-          "uid": "74c98df9-6477-438b-98f2-5d4cfd5abb59",
+          "uid": "95ae2c68-0abc-4e83-83bd-080aacb3d224",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-16",
           "end": "2026-01-19"
         },
         {
-          "uid": "6953c9b8-85f1-4df4-8030-8497b23148e0",
+          "uid": "1e83cfa2-f0ac-4e57-ae4e-5c8ffda10725",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-21",
           "end": "2026-01-24"
         },
         {
-          "uid": "c5442613-6f02-4eaa-867b-b848f5d5e517",
+          "uid": "7116719f-c4aa-4345-899a-f3d79d3bebd4",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-24",
           "end": "2026-01-27"
         },
         {
-          "uid": "df959422-d711-408a-92b6-e7b632f52d64",
+          "uid": "7fba01bf-7e66-4432-a246-24352cff0ce5",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-27",
           "end": "2026-01-30"
         },
         {
-          "uid": "01174bed-3440-4651-b164-42d2102dc455",
+          "uid": "0e6fe76f-5e23-4056-9b99-60ebf05151c3",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-30",
           "end": "2026-02-01"
         },
         {
-          "uid": "a5288f03-6894-4418-8e97-3d3538611a67",
+          "uid": "c36b35cf-a61e-40b5-a5f3-0e012d68335c",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-02-01",
           "end": "2026-02-05"
         },
         {
-          "uid": "78c84a86-fd91-40a2-9b7a-42747ef79090",
+          "uid": "a5994c87-699e-426f-a20d-1a34b085f015",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-05",
           "end": "2026-02-08"
         },
         {
-          "uid": "cce6e402-d45e-4d8a-a6b2-a2df0972a656",
+          "uid": "0dacdce6-2c41-42b7-b67a-2b77064593a5",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-13",
           "end": "2026-02-16"
         },
         {
-          "uid": "5b754fa4-794e-4ccd-a3d0-73da852f3234",
+          "uid": "b8098456-9f9c-463f-96e5-77aa66286396",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-20",
           "end": "2026-02-22"
         },
         {
-          "uid": "a543016b-5103-4b8b-9533-1a11ddff518a",
+          "uid": "0d94f304-46d3-4090-b4da-0acf89d652ca",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-02-22",
           "end": "2026-02-23"
         },
         {
-          "uid": "a83a5741-fa82-46f9-9ca2-bedfeba8980b",
+          "uid": "4f62ff80-b291-4895-be0c-128e8676a78a",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-27",
           "end": "2026-03-01"
         },
         {
-          "uid": "ae837737-e2d5-407f-8479-940e2af8e193",
+          "uid": "a0a75218-10df-4883-bb4a-efd0505c3541",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-03",
           "end": "2026-04-05"
         },
         {
-          "uid": "04fc535b-508f-4a2a-a44a-4442170a8e30",
+          "uid": "d8318e35-8f38-4689-b5af-70188a2a10ee",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-04-05",
           "end": "2026-04-06"
         },
         {
-          "uid": "e3db9079-5b0d-456b-816e-e50154337bfa",
+          "uid": "4f749d9e-f3b9-47d5-bb49-6d061e4b0b39",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-04-20",
           "end": "2026-04-23"
         },
         {
-          "uid": "b4caca86-4e72-4920-8c6e-27da7c9ce4a3",
+          "uid": "f3354c16-7c79-4798-8943-ada83860870e",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-08",
           "end": "2026-05-10"
         },
         {
-          "uid": "34ff73f1-ee33-43dd-8511-26af40a6334f",
+          "uid": "9221acdb-82e0-4c0b-bc9a-8f98dc322eb0",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-13",
           "end": "2026-05-17"
         },
         {
-          "uid": "98397d36-3082-498d-a874-99b25a89a8bc",
+          "uid": "cc2eeef3-3e7a-466b-a29e-23be7254cf3b",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-22",
           "end": "2026-05-25"
         },
         {
-          "uid": "841e2d26-4646-4074-b46b-ed642dec10f6",
+          "uid": "3df2ddce-8cae-4b5a-839e-1de15c96176a",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-06-01",
@@ -1202,217 +1195,217 @@
       "name": "67 Squirrel Tree Ln",
       "events": [
         {
-          "uid": "5d565547-0db8-4a7f-aba7-da3e5728d359",
+          "uid": "ea9a1f80-9142-4775-acf5-ef6412c82bd6",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-01",
           "end": "2026-01-04"
         },
         {
-          "uid": "2d0c3b28-84b1-4054-9af6-2b55e13a977c",
+          "uid": "adb5d33b-7b3d-44c3-a839-ef03611f2219",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-09",
           "end": "2026-01-12"
         },
         {
-          "uid": "a46dae80-865c-47bb-8a98-247060409ad3",
+          "uid": "ee99dd9b-4c0b-4334-bd45-4bc55803af05",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-12",
           "end": "2026-01-16"
         },
         {
-          "uid": "5be04121-b599-4536-aa8c-f2655bed0783",
+          "uid": "90d3fbb6-c93f-418d-bb07-bb50da69bf6f",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-16",
           "end": "2026-01-19"
         },
         {
-          "uid": "52d0449e-0f1f-4e2d-a88d-b09c31f4baf9",
+          "uid": "7a8ce96c-3f59-4140-b1d9-e57e0f624c9c",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-21",
           "end": "2026-01-23"
         },
         {
-          "uid": "4190fe92-2b8b-4ce9-af4f-1b26d02afcb0",
+          "uid": "f8274911-9126-4e60-9f31-c1a99b144f37",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-23",
           "end": "2026-01-26"
         },
         {
-          "uid": "897cc11f-7bf7-4d49-9c01-95ae001bbc77",
+          "uid": "33b00297-12e0-4f44-974c-d012a056e261",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-01-26",
           "end": "2026-01-29"
         },
         {
-          "uid": "518d11f4-a2b1-4425-af44-246dbb8ffe1b",
+          "uid": "51bb2f69-3000-44e7-bd81-252b55585408",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-29",
           "end": "2026-01-31"
         },
         {
-          "uid": "d6b7f2fc-fcc9-4814-8a80-de33f34097ef",
+          "uid": "8824f428-6355-4a00-99d8-215d1aae461f",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-01-31",
           "end": "2026-02-02"
         },
         {
-          "uid": "6d9a7ee8-ed09-4365-b46e-49c2c3c1db82",
+          "uid": "d5447841-8c9a-48f6-b20a-6fd33cdbb56b",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-06",
           "end": "2026-02-09"
         },
         {
-          "uid": "a01fa0b1-14f8-44d7-89ad-73fef99061b6",
+          "uid": "21b6ef72-743d-4224-bf4d-4db35bb8cbef",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-13",
           "end": "2026-02-16"
         },
         {
-          "uid": "596fa97d-a4e7-43cb-9712-2ef16ae2797a",
+          "uid": "f34704b4-321d-4e50-a762-68a745a3c9a9",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-20",
           "end": "2026-02-22"
         },
         {
-          "uid": "ec883bd4-1d06-4eb1-a0de-48c8b2735430",
+          "uid": "4d3ebfcc-e4cf-446a-a86a-74f5749b170b",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-02-22",
           "end": "2026-02-23"
         },
         {
-          "uid": "3d331bd4-72de-4f66-ab28-35c03faec2f0",
+          "uid": "0ded9a97-22b9-40dd-97ed-bc133f278cc0",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-02-27",
           "end": "2026-03-01"
         },
         {
-          "uid": "64a612dd-19fa-4cc8-b851-e47df73c2131",
+          "uid": "a9b45313-dd2c-4066-974f-c330786a999b",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-06",
           "end": "2026-03-08"
         },
         {
-          "uid": "8e211845-d29a-40d2-a984-670c16419ffd",
+          "uid": "9409befc-2ecc-4157-bd67-2eecb3f14ee5",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-13",
           "end": "2026-03-15"
         },
         {
-          "uid": "0d618115-8b28-40df-8082-6e529f1b4ec4",
+          "uid": "8ea738ba-360d-4ac6-830f-78fa2d7f16f7",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-20",
           "end": "2026-03-22"
         },
         {
-          "uid": "1b0984d3-139a-4094-b5e2-05402c8ba9c4",
+          "uid": "19463db4-36ac-440b-bc71-fe0cf13b8b76",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-27",
           "end": "2026-03-29"
         },
         {
-          "uid": "fc2b7f86-edd6-42b2-acf3-edd5945daaaf",
+          "uid": "1bc907c8-f733-4aa4-9f80-fd153e43083e",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-03-31",
           "end": "2026-04-03"
         },
         {
-          "uid": "11c921cf-d9e5-4d02-b3bd-1aaaaa7636db",
+          "uid": "6a079b75-b63a-4b79-a32f-a474e83252fa",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-03",
           "end": "2026-04-06"
         },
         {
-          "uid": "59c9ce74-8bfa-46ef-ac46-d7a8eda9d55a",
+          "uid": "c5a13c8b-30aa-4015-b2d1-85cefc43afc6",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-09",
           "end": "2026-04-12"
         },
         {
-          "uid": "5c79e25e-f37f-4d9b-bf22-2ee3354bac19",
+          "uid": "020758f4-ece9-42b9-9e4c-8f8bd5641afb",
           "summary": "Owner Block",
           "type": "closed",
           "start": "2026-04-12",
           "end": "2026-04-13"
         },
         {
-          "uid": "9153ec22-71c1-430b-a8c6-ae38cd3ba918",
+          "uid": "df871d39-7b91-49a7-8edc-2ca1a7b6c5ab",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-16",
           "end": "2026-04-20"
         },
         {
-          "uid": "431a347a-8f19-4bfe-b73d-17192a200ad1",
+          "uid": "f54b34ba-0a33-4ddb-9506-882e3da8f962",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-24",
           "end": "2026-04-26"
         },
         {
-          "uid": "8adafa7d-2d57-4662-8a17-7bdddcd38bec",
+          "uid": "2a847483-0c91-4fd7-acf8-ae3cc2c88049",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-04-30",
           "end": "2026-05-02"
         },
         {
-          "uid": "e8a87ea0-2858-421e-a993-bae60ab62fb5",
+          "uid": "ae806feb-1fc3-4804-8ce5-42eec6e50ca7",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-08",
           "end": "2026-05-11"
         },
         {
-          "uid": "ced59d7c-7645-4f89-85c8-7fb3ebfc1f6a",
+          "uid": "e3af4898-ee06-4de5-9a28-cfb3e0357ab5",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-13",
           "end": "2026-05-16"
         },
         {
-          "uid": "2899fbc5-384b-428e-bd02-45494a4b9229",
+          "uid": "3e4d0bc9-b43d-44a0-9abf-23c8f10c9efa",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-22",
           "end": "2026-05-25"
         },
         {
-          "uid": "1083eb2f-7265-4108-80d9-f46070539024",
+          "uid": "1768ba9d-216b-45a6-9803-475b3b339c63",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-05-26",
           "end": "2026-05-31"
         },
         {
-          "uid": "40355a77-cf32-4409-b981-d227b47107c1",
+          "uid": "6159454b-d7c9-4bae-8e86-811a44b7b5b9",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-06-07",
           "end": "2026-06-13"
         },
         {
-          "uid": "1e0bd5b3-b86a-4eb0-b58d-a60ab9523a95",
+          "uid": "5e7513c6-1be1-4c26-92d0-31ee8054a0ea",
           "summary": "Reservation",
           "type": "reservation",
           "start": "2026-06-20",
