@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import glob
+import hashlib
 import json
 import logging
 import os
@@ -114,6 +115,22 @@ def _parse_ics_file(path):
     return events
 
 
+def _stable_uid(event):
+    """Lodgify regenerates every iCal UID on every feed download (verified
+    2026-06-10: two back-to-back downloads of the same feed share zero UIDs).
+    A uid-keyed sync therefore archives+recreates every Notion page each cycle.
+    Derive a STABLE identity from what actually identifies a calendar block:
+    property + date range + summary. A date change intentionally produces a new
+    identity (old page archived, new created) — correct for a calendar."""
+    key = "|".join([
+        event.get("property", ""),
+        event.get("dtstart", ""),
+        event.get("dtend", ""),
+        (event.get("summary") or "").strip().lower(),
+    ])
+    return hashlib.sha1(key.encode("utf-8")).hexdigest()
+
+
 def _collect_events():
     pattern = os.path.join(ICS_DIR, ICS_GLOB)
     paths = sorted(glob.glob(pattern))
@@ -130,6 +147,9 @@ def _collect_events():
 
         for event in _parse_ics_file(path):
             event["property"] = property_name
+            # Replace the per-download rotating uid with the stable identity —
+            # everything downstream (titles, matching, archiving) keys off this.
+            event["uid"] = _stable_uid(event)
             all_events.append(event)
 
     return all_events
