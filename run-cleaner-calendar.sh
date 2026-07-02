@@ -18,3 +18,8 @@ PYTHON="/Library/Frameworks/Python.framework/Versions/3.12/bin/python3"
 
 "$PYTHON" refresh_ics.py
 "$PYTHON" notion_sync_calendar.py
+
+# Independent watchdog: alert if the PUBLIC embed stops redeploying
+# (Pages outage, dead cron...). Non-fatal — monitoring must never
+# block or fail the sync above.
+"$PYTHON" check_embed_freshness.py || echo "freshness check reported stale/unreachable (alert handled in-script)" >&2
