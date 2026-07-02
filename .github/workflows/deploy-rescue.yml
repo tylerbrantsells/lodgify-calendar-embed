@@ -1,0 +1,29 @@
+name: Deploy rescue
+
+# Re-runs the Pages deploy when it fails (e.g. transient GitHub Pages
+# degradation like the 2026-07-02 incident). workflow_run fires again on
+# each completed attempt, so run_attempt caps total retries at 3.
+
+on:
+  workflow_run:
+    workflows: ["Deploy calendar to GitHub Pages"]
+    types: [completed]
+
+permissions:
+  actions: write
+
+jobs:
+  rerun-failed-deploy:
+    if: >-
+      github.event.workflow_run.conclusion == 'failure' &&
+      github.event.workflow_run.run_attempt < 4
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait 5 minutes (let transient outages clear)
+        run: sleep 300
+      - name: Re-run failed jobs of the deploy run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh api -X POST
+          "repos/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}/rerun-failed-jobs"
