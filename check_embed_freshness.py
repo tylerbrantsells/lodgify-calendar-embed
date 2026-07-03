@@ -27,7 +27,10 @@ sys.path.insert(0, HERE)
 from notion_sync_calendar import _load_env_file  # the shared .env loader
 
 SITE_URL = "https://calendar.designsparkproperties.com/"
-STALE_AFTER_HOURS = 3
+# GitHub's "hourly" schedule cron routinely lags: observed real gaps of
+# 3.4-4.5h between deploys on 2026-07-03. 6h stays clear of cron jitter
+# while still catching genuine outages the same day.
+STALE_AFTER_HOURS = 6
 REALERT_COOLDOWN_HOURS = 6
 STATE_PATH = os.path.join(HERE, ".freshness-alert-state.json")
 TIMEOUT = 30

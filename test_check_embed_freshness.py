@@ -17,7 +17,11 @@ class IsStaleTests(unittest.TestCase):
         self.assertTrue(is_stale(header, NOW))
 
     def test_exactly_at_threshold_is_not_stale(self):
-        header = "Thu, 02 Jul 2026 20:00:00 GMT"  # exactly 3h
+        header = "Thu, 02 Jul 2026 17:00:00 GMT"  # exactly 6h
+        self.assertFalse(is_stale(header, NOW))
+
+    def test_github_cron_lag_gap_is_not_stale(self):
+        header = "Thu, 02 Jul 2026 18:30:00 GMT"  # 4.5h — worst observed cron gap
         self.assertFalse(is_stale(header, NOW))
 
     def test_unparseable_header_counts_as_stale(self):
