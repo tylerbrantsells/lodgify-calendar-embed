@@ -24,6 +24,13 @@ jobs:
       - name: Re-run failed jobs of the deploy run
         env:
           GH_TOKEN: ${{ github.token }}
-        run: >-
-          gh api -X POST
-          "repos/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}/rerun-failed-jobs"
+          RUN_PATH: repos/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}
+        run: |
+          # The run may have been rerun/fixed by other means during the wait —
+          # rerunning a non-failed run returns 403 "cannot be retried".
+          conclusion=$(gh api "$RUN_PATH" --jq .conclusion)
+          if [ "$conclusion" != "failure" ]; then
+            echo "Run is now '$conclusion'; nothing to rescue."
+            exit 0
+          fi
+          gh api -X POST "$RUN_PATH/rerun-failed-jobs"
