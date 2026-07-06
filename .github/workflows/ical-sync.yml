@@ -18,7 +18,7 @@ jobs:
       ICS_INSECURE_SSL: ${{ secrets.ICS_INSECURE_SSL }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
 
       - name: Verify secrets
         run: |
@@ -28,7 +28,7 @@ jobs:
           fi
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
