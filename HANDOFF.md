@@ -3,7 +3,8 @@
 _As of 2026-07-06_
 
 ## State
-- GitHub Actions fully quiet: Node 20 deprecation warnings eliminated by bumping `deploy-pages` v4→v5, `upload-pages-artifact` v3→v5, `checkout` v4→v5 in both `pages.yml` and `ical-sync.yml` (commits `6ba97bc`, `a0a1f69`, pushed). Verified live: deploy run 28803505691 succeeded with zero annotations.
+- GitHub Actions fully quiet, all actions at latest majors: `checkout@v7`, `setup-python@v6`, `upload-pages-artifact@v5`, `deploy-pages@v5` (commits `6ba97bc`, `a0a1f69`, `3bab827`, pushed). Verified live 2026-07-06: full sync→deploy chain green with zero annotations.
+- `deploy-rescue.yml` hardened (`811ecfc`): skips rerun when the run is no longer failed, so it can't 403 if something else fixes the deploy during its 5-min wait.
 - Daily fail-then-succeed deploy pattern diagnosed: it's GitHub's transient server-side "Deployment failed, try again later" Pages error, NOT anything in this repo. `deploy-rescue.yml` auto-retries (up to 3 attempts, 5-min wait) and self-heals it. Expect occasional failure emails to continue; they resolve themselves.
 - Local gate: `python3 -m pytest test_check_embed_freshness.py -q` — 9 passed.
 
