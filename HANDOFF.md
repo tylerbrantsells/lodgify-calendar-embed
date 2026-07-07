@@ -8,6 +8,9 @@ _As of 2026-07-06_
 - Daily fail-then-succeed deploy pattern diagnosed: it's GitHub's transient server-side "Deployment failed, try again later" Pages error, NOT anything in this repo. `deploy-rescue.yml` auto-retries (up to 3 attempts, 5-min wait) and self-heals it. Expect occasional failure emails to continue; they resolve themselves.
 - Local gate: `python3 -m pytest test_check_embed_freshness.py -q` — 9 passed.
 
+- Property onboarding documented: `docs/ADDING-A-PROPERTY.md` (human) + `.claude/skills/add-property/SKILL.md` (Claude skill). Local `.env` is source of truth for `ICS_URLS_JSON`.
+- In-job deploy retry added to `pages.yml` (`515a3ef`): transient Pages failures retry within the run, so no failure emails; rescue workflow is the backstop.
+
 ## In flight
 - Nothing.
 
