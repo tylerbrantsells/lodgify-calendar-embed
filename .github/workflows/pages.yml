@@ -24,7 +24,9 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  # false: a later sync/heartbeat must not abort an in-flight deploy
+  # (including the 180s 503 retry). Cancelled runs skip deploy-rescue.
+  cancel-in-progress: false
 
 jobs:
   build:
