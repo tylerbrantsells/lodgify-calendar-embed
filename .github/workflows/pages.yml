@@ -1,6 +1,12 @@
 name: Deploy calendar to GitHub Pages
 
 on:
+  # Heartbeat: GitHub's hourly sync cron routinely lags 3–4.5h, and a
+  # single Pages/Actions 503 then leaves Last-Modified stale past the 6h
+  # alert (2026-07-20, 2026-08-06). A 2h deploy keeps the public embed
+  # fresh even when sync is skipped or one deploy 503s.
+  schedule:
+    - cron: "20 */2 * * *"
   push:
     branches: ["main"]
     paths:
