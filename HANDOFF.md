@@ -1,15 +1,16 @@
 # Handoff — DSP Cleaner Calendar
 
-_As of 2026-07-06_
+_As of 2026-08-13_
 
 ## State
-- GitHub Actions fully quiet, all actions at latest majors: `checkout@v7`, `setup-python@v6`, `upload-pages-artifact@v5`, `deploy-pages@v5` (commits `6ba97bc`, `a0a1f69`, `3bab827`, pushed). Verified live 2026-07-06: full sync→deploy chain green with zero annotations.
+- Public embed is live and fresh (`calendar_data.js` generated_at 2026-08-13T19:09:55Z). The 2026-07-20 stale-alert email was a GitHub Pages/Actions 503 (critical incident 2026-07-19T23:34Z), not a repo bug; recovered 2026-07-20T04:39Z. Same class of gap on 2026-08-06 (Actions/Pages incident + runner-not-acquired).
+- `pages.yml` now has a 2h heartbeat cron (`20 */2 * * *`, commit `19c38f9`) so one missed hourly sync + cron jitter cannot leave Last-Modified stale past the 6h watchdog. `cancel-in-progress` is false so overlapping sync/heartbeat runs queue instead of aborting a live deploy (cancelled runs never trip `deploy-rescue`).
+- GitHub Actions at latest majors: `checkout@v7`, `setup-python@v6`, `upload-pages-artifact@v5`, `deploy-pages@v5`. Pages cert approved, expires 2026-10-01. `https_enforced: true`.
 - `deploy-rescue.yml` hardened (`811ecfc`): skips rerun when the run is no longer failed, so it can't 403 if something else fixes the deploy during its 5-min wait.
-- Daily fail-then-succeed deploy pattern diagnosed: it's GitHub's transient server-side "Deployment failed, try again later" Pages error, NOT anything in this repo. `deploy-rescue.yml` auto-retries (up to 3 attempts, 5-min wait) and self-heals it. Expect occasional failure emails to continue; they resolve themselves.
+- Daily fail-then-succeed deploy pattern is GitHub's transient server-side Pages error, NOT anything in this repo. In-job retry (`515a3ef`) + rescue + 2h heartbeat cover it. Occasional failure emails may still fire during multi-hour GitHub outages.
 - Local gate: `python3 -m pytest test_check_embed_freshness.py -q` — 9 passed.
 
 - Property onboarding documented: `docs/ADDING-A-PROPERTY.md` (human) + `.claude/skills/add-property/SKILL.md` (Claude skill). Local `.env` is source of truth for `ICS_URLS_JSON`.
-- In-job deploy retry added to `pages.yml` (`515a3ef`): transient Pages failures retry within the run, so no failure emails; rescue workflow is the backstop.
 
 ## In flight
 - Nothing.
