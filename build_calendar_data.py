@@ -52,6 +52,7 @@ _load_dotenv()
 ICS_URLS_JSON = os.getenv("ICS_URLS_JSON")
 PROPERTY_BLOCKS_JSON = os.getenv("PROPERTY_BLOCKS_JSON")
 PROPERTY_ORDER_JSON = os.getenv("PROPERTY_ORDER_JSON")
+PLACEHOLDER_PROPERTIES_JSON = os.getenv("PLACEHOLDER_PROPERTIES_JSON")
 ICS_INSECURE_SSL = os.getenv("ICS_INSECURE_SSL", "false").lower() in {"1", "true", "yes"}
 CALENDAR_MIN_DATE = os.getenv("CALENDAR_MIN_DATE", "2026-01-01")
 ALERT_EMAIL_TO = os.getenv("ALERT_EMAIL_TO", "hello@designspark.properties")
@@ -92,6 +93,46 @@ def _sort_properties(properties):
         except Exception:
             pass
     return sorted(properties, key=lambda prop: _property_sort_key(prop.get("name", "")))
+
+
+def _placeholder_names():
+    if PLACEHOLDER_PROPERTIES_JSON:
+        try:
+            data = json.loads(PLACEHOLDER_PROPERTIES_JSON)
+        except Exception:
+            data = None
+        if isinstance(data, list):
+            return data
+    path = os.getenv("PLACEHOLDER_PROPERTIES_PATH", "placeholder_properties.json")
+    if not os.path.exists(path):
+        return []
+    try:
+        with open(path, "r", encoding="utf-8") as handle:
+            data = json.load(handle)
+    except Exception:
+        return []
+    if isinstance(data, list):
+        return data
+    return []
+
+
+def _add_placeholders(properties, names=None):
+    """Append named properties that have no iCal feed yet.
+
+    A missing live feed stays missing. Only names passed here are added,
+    so a failed download cannot look like an empty calendar.
+    """
+    if names is None:
+        names = _placeholder_names()
+    present = {str(prop.get("name", "")).strip().lower() for prop in properties}
+    added = []
+    for name in names:
+        label = str(name).strip()
+        if not label or label.lower() in present:
+            continue
+        added.append({"name": label, "events": []})
+        present.add(label.lower())
+    return list(properties) + added
 
 
 def _unfold_ics_lines(raw_text):
@@ -412,7 +453,7 @@ def _collect_events():
 
         properties.append({"name": property_name, "events": normalized_events})
 
-    return _sort_properties(properties), failures
+    return _sort_properties(_add_placeholders(properties)), failures
 
 
 def main():
