@@ -1,6 +1,8 @@
 import unittest
 
-from build_calendar_data import _add_placeholders, _is_preparation_time
+from datetime import date
+
+from build_calendar_data import _add_placeholders, _is_buffer_block, _is_preparation_time
 
 
 class PlaceholderPropertiesTest(unittest.TestCase):
@@ -34,6 +36,16 @@ class PreparationTimeTest(unittest.TestCase):
         self.assertFalse(_is_preparation_time("Not Available"))
         self.assertFalse(_is_preparation_time("J*** S****"))
         self.assertFalse(_is_preparation_time("P******* T**"))
+
+
+class MinimumStayTest(unittest.TestCase):
+    def test_one_night_booking_is_a_buffer(self):
+        self.assertTrue(_is_buffer_block("Not Available", date(2026, 9, 15), date(2026, 9, 16)))
+        self.assertTrue(_is_buffer_block("J*** S****", date(2026, 10, 4), date(2026, 10, 5)))
+
+    def test_two_night_stay_and_one_night_owner_block_stay(self):
+        self.assertFalse(_is_buffer_block("J*** S****", date(2026, 10, 2), date(2026, 10, 4)))
+        self.assertFalse(_is_buffer_block("Closed Period", date(2026, 4, 12), date(2026, 4, 13)))
 
 
 if __name__ == "__main__":

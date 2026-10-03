@@ -87,6 +87,17 @@ def _is_preparation_time(summary):
     return _masked(parts[0], "preparation") and _masked(parts[1], "time")
 
 
+def _is_buffer_block(summary, start, end):
+    """A one-night booking is a cleaning buffer. Every house has a two-night minimum."""
+    if _is_preparation_time(summary):
+        return True
+    if (summary or "").strip().lower() == "closed period":
+        return False
+    if start is None or end is None:
+        return False
+    return (end - start).days < 2
+
+
 def _property_sort_key(name):
     match = re.match(r"\s*(\d+)", name or "")
     if match:
@@ -413,13 +424,13 @@ def _collect_events():
             dtend = _parse_date(event.get("dtend"))
             if not dtstart or not dtend:
                 continue
+            raw_summary = (event.get("summary") or "").strip()
+            if _is_buffer_block(raw_summary, dtstart, dtend):
+                continue
             if dtend <= min_date:
                 continue
             if dtstart < min_date:
                 dtstart = min_date
-            raw_summary = (event.get("summary") or "").strip()
-            if _is_preparation_time(raw_summary):
-                continue
             event_type = "closed" if raw_summary.lower() == "closed period" else "reservation"
             # Remove guest-identifying details from public output.
             summary = "Owner Block" if event_type == "closed" else "Reservation"
