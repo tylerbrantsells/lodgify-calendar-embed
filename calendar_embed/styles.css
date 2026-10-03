@@ -24,8 +24,15 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 body {
   margin: 0;
+  overscroll-behavior-x: none;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
     "Helvetica Neue", Arial, sans-serif;
   color: var(--ink);
@@ -242,6 +249,7 @@ body {
 .calendar-scroll {
   overflow-x: auto;
   overflow-y: hidden;
+  overscroll-behavior-x: contain;
   position: relative;
   flex: 1 1 auto;
   min-width: 0;

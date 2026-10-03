@@ -260,6 +260,18 @@ function setFocusDate(dateObj) {
   renderCalendar();
 }
 
+function centerTimelineOn(scroll, iso) {
+  const targetCell = scroll.querySelector(`.day-cell[data-date="${iso}"]`);
+  if (!targetCell) return;
+  const scrollRect = scroll.getBoundingClientRect();
+  const cellRect = targetCell.getBoundingClientRect();
+  const delta = (cellRect.left + cellRect.width / 2) - (scrollRect.left + scrollRect.width / 2);
+  const maxLeft = Math.max(0, scroll.scrollWidth - scroll.clientWidth);
+  const nextLeft = Math.max(0, Math.min(maxLeft, scroll.scrollLeft + delta));
+  // scrollTo stays on this element. scrollIntoView also slides the parent page.
+  scroll.scrollTo({ left: nextLeft });
+}
+
 function renderCalendar() {
   if (!calendarData) return;
 
@@ -446,10 +458,7 @@ function renderCalendar() {
     const target = pendingScrollToISO;
     pendingScrollToISO = null;
     requestAnimationFrame(() => {
-      const targetCell = scroll.querySelector(`.day-cell[data-date="${target}"]`);
-      if (targetCell) {
-        targetCell.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
-      }
+      centerTimelineOn(scroll, target);
     });
   }
 }
