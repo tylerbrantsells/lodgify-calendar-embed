@@ -68,6 +68,25 @@ ALERT_DEDUPE_WINDOW_HOURS = int(os.getenv("ALERT_DEDUPE_WINDOW_HOURS", "24"))
 
 
 
+def _is_preparation_time(summary):
+    """Lodgify cleaning buffers. The masked export keeps the first letter of each word."""
+    raw = (summary or "").strip()
+    if raw.lower() == "preparation time":
+        return True
+    parts = raw.split(" ")
+    if len(parts) != 2:
+        return False
+
+    def _masked(token, word):
+        if len(token) != len(word) or not token:
+            return False
+        if token[0].lower() != word[0].lower():
+            return False
+        return set(token[1:]) <= {"*"}
+
+    return _masked(parts[0], "preparation") and _masked(parts[1], "time")
+
+
 def _property_sort_key(name):
     match = re.match(r"\s*(\d+)", name or "")
     if match:
@@ -399,6 +418,8 @@ def _collect_events():
             if dtstart < min_date:
                 dtstart = min_date
             raw_summary = (event.get("summary") or "").strip()
+            if _is_preparation_time(raw_summary):
+                continue
             event_type = "closed" if raw_summary.lower() == "closed period" else "reservation"
             # Remove guest-identifying details from public output.
             summary = "Owner Block" if event_type == "closed" else "Reservation"
