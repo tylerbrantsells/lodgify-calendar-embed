@@ -13,6 +13,39 @@ permissions:
   actions: write
 
 jobs:
+  # A deploy job stuck in queued/waiting never reaches conclusion failure,
+  # and it holds the pages-deploy group so later runs are cancelled
+  # (2026-10-05 14:23Z through 2026-10-08). Those cancelled completions
+  # are what wake this job. Cancelling the holder lets the newest pending
+  # run start. 30 minutes is past a normal deploy and the 180s Pages retry.
+  cancel-stuck-deploy:
+    if: github.event.workflow_run.conclusion == 'cancelled'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel a Pages run stuck before its deploy starts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          cutoff=$(( $(date +%s) - 1800 ))
+          ids="$(gh api "repos/$REPO/actions/workflows/pages.yml/runs?status=queued&per_page=20" --jq '.workflow_runs[].id')"
+          ids="$ids $(gh api "repos/$REPO/actions/workflows/pages.yml/runs?status=waiting&per_page=20" --jq '.workflow_runs[].id')"
+          cancelled=0
+          for id in $ids; do
+            [ -n "$id" ] || continue
+            created=$(gh api "repos/$REPO/actions/runs/$id" --jq .created_at)
+            created_s=$(date -d "$created" +%s)
+            if [ "$created_s" -lt "$cutoff" ]; then
+              echo "Cancelling stuck Pages run $id from $created"
+              gh api -X POST "repos/$REPO/actions/runs/$id/cancel"
+              cancelled=1
+            fi
+          done
+          if [ "$cancelled" -eq 0 ]; then
+            echo "No queued or waiting Pages run older than 30 minutes."
+          fi
+
   rerun-failed-deploy:
     if: >-
       github.event.workflow_run.conclusion == 'failure' &&
