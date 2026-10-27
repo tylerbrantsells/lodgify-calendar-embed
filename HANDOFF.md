@@ -17,7 +17,7 @@ _As of 2026-10-08_
 - Nothing.
 
 ## Blocked on user
-- 18 Coopers Vantage stays an empty row until its Lodgify iCal URL is in `.env` `ICS_URLS_JSON` and the GitHub secret. Then remove the name from `placeholder_properties.json`.
+- Nothing. 18 Coopers Vantage (The Deck House) is a live Lodgify feed in `ICS_URLS_JSON`. `placeholder_properties.json` is empty.
 
 ## Don't re-learn
 - The hourly sync bot commits to main constantly — always `git pull --rebase` before pushing.
